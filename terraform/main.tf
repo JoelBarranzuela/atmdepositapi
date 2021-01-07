@@ -9,7 +9,7 @@ resource "azurerm_resource_group" "rgid" {
   location = local.region
 }
 resource "azurerm_container_registry" "acr" {
-  name                     = "acr${local.alias}02"
+  name                     = "acr${local.alias}01"
   location                 = azurerm_resource_group.rgid.location
   resource_group_name      = azurerm_resource_group.rgid.name
   sku                      = "Basic"
